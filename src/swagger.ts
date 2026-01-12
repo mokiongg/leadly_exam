@@ -1,4 +1,5 @@
 import swaggerJsdoc from 'swagger-jsdoc';
+import path from 'path';
 import { ErrorCode } from './types';
 import { ReservationStatus } from './modules/reservations/types';
 
@@ -546,13 +547,12 @@ const swaggerDefinition = {
 
 const options: swaggerJsdoc.Options = {
   swaggerDefinition,
-  // Parse JSDoc comments from route files
+  // Parse JSDoc comments from route files (use absolute paths for Vercel compatibility)
   apis: [
-    './src/modules/**/*.routes.ts',
-    './src/server.ts',
-    // Also include compiled JS for production
-    './dist/modules/**/*.routes.js',
-    './dist/server.js',
+    path.join(__dirname, 'modules/**/*.routes.ts'),
+    path.join(__dirname, 'modules/**/*.routes.js'),
+    path.join(__dirname, 'server.ts'),
+    path.join(__dirname, 'server.js'),
   ],
 };
 
