@@ -435,6 +435,7 @@ When rate limited, the API returns:
 4. **Structured request validation**: All incoming requests are validated using Zod schemas via middleware (`validateReqBody`, `validateParams`). This ensures consistent validation logic and clear error messages before reaching business logic
 5. **Consistent response format**: All API responses follow a unified structure with `{ success: true, data: ... }` for success and `{ success: false, error: { code, message } }` for errors. This makes the API predictable and easier to consume
 6. **Centralized error handling**: A custom `AppError` class with error codes allows throwing typed errors anywhere in the codebase. The global error handler middleware catches all errors and formats them consistently, keeping route handlers clean
+7. **UUID for primary keys**: Chose UUIDs over auto-increment integers (bigint) for several reasons: globally unique without database coordination, can be generated client-side, prevents enumeration attacks (users can't guess valid IDs), and doesn't expose record counts or creation order
 
 ---
 
