@@ -4,13 +4,15 @@ A backend API service for managing inventory reservations with support for creat
 
 ## 🔗 Quick Links
 
-| Resource              | URL                                                    |
-| --------------------- | ------------------------------------------------------ |
-| **Deployed API**      | `https://leadly-exam.vercel.app`                       |
-| **Swagger UI**        | `https://leadly-exam.vercel.app/docs/`                 |
-| **OpenAPI JSON**      | `https://leadly-exam.vercel.app/openapi.json`          |
-| **Demo Video**        | [Link to demo video](#)                                |
-| **GitHub Repository** | [leadly_exam](https://github.com/mokiongg/leadly_exam) |
+| Resource              | URL                                                                    |
+| --------------------- | ---------------------------------------------------------------------- |
+| **Deployed API**      | `https://leadly-exam.vercel.app`                                       |
+| **Swagger UI**        | `https://leadly-exam.vercel.app/docs/`                                 |
+| **OpenAPI JSON**      | `https://leadly-exam.vercel.app/openapi.json`                          |
+| **Demo Video**        | [Video 1](https://www.loom.com/share/5a7878291dc747e48fb1c87b0d3fcf93) |
+|                       | [Video 2](https://www.loom.com/share/fcbf408d1efe45e18e3f8fc6746983f7) |
+|                       | [Video 3](https://www.loom.com/share/2c162275316b4921a5630deef0002310) |
+| **GitHub Repository** | [leadly_exam](https://github.com/mokiongg/leadly_exam)                 |
 
 ---
 

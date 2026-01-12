@@ -5,7 +5,7 @@ import { Reservation, ReservationResponse, ReservationStatus } from './types';
 import { CreateReservationInput } from './reservations.schema';
 
 // Reservation expiry time in minutes
-const RESERVATION_EXPIRY_MINUTES = 10;
+const RESERVATION_EXPIRY_MINUTES = 1;
 
 /**
  * Gets all reservations
